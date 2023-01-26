@@ -8,7 +8,6 @@ class Handler implements URLHandler{
     List<String> strings = new ArrayList<String>();
 
     public String handleRequest(URI url){
-
     
         if (url.getPath().contains("/add")) {
             String[] newString = url.getQuery().split("=");
@@ -25,13 +24,8 @@ class Handler implements URLHandler{
         }else{
             return "404 Not Found!";
         }
-        return null;
-        
-            
-
-        
+        return null;    
     }
-    
 }
 class SearchEngine {
     public static void main(String[] args) throws IOException {
