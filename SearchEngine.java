@@ -22,7 +22,7 @@ class Handler implements URLHandler{
         else if (url.getPath().equals("/search")) {
             String[] substring = url.getQuery().split("=");
             for(int i = 0; i < strings.size(); i++){
-                if(strings.get(i) == substring[0]){
+                if(strings.get(i).contains(substring[0])){
                     System.out.println(strings.get(i));
                     return String.format(strings.get(i));
                 }
