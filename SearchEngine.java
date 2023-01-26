@@ -4,12 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 class Handler implements URLHandler{
-    // first find out what's after /add?s=
-    //put these into an array
-    //then find out what's after /search?s=
-    //use .contains!!
-    //turn that into substring
-    //see which strings in the array has the substring
+    
     List<String> strings = new ArrayList<String>();
 
     public String handleRequest(URI url){
