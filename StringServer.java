@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
+
     List<String> strings = new ArrayList<String>();
 
     public String handleRequest(URI url){
